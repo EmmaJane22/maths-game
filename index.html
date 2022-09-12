@@ -14,19 +14,50 @@
 <body>
     <!-- Heading Area -->
     <h1 class="heading">
+        <!-- logo -->
         <img class="logo" src="assets/images/logo.png" alt="logo"> Love Maths    
     </h1>
 
     <!-- Game area -->
     <div class="game-area"> 
+        <!-- controls area -->
+        <div class="controls-area">
 
+            <!-- buttons -->
+            <button class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
 
+        <!-- question area -->
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <!-- paragraph only visible on mobile -->
+            <p class="answer-message">Enter answer:</p>
+            <!-- user input area -->
+            <input id="answer-box" type="number">
+        </div>
+        <!-- submit button -->
+        <button class="btn btn--gray">Submit answer</button>
     </div>
 
     <!-- score area -->
     <div class="score-area">
+        <!-- score box -->
         <p class="scores">Correct Answers <span id="score">0</span></p>
-
+        <!-- score box -->
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
 
